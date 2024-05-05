@@ -1,0 +1,132 @@
+// Fonts
+@font-face {
+  font-family: 'font-alata';
+  src: url(fonts/Alata-Regular.woff);
+}
+
+//Mixins
+@mixin flex ($align-content, $justify-content) {
+  align-content: $align-content;
+  justify-content: $justify-content;
+  display: flex;
+}
+
+@mixin button-main {
+  padding: 13px, 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid $white;
+  text-transform: uppercase;
+  font-size: large;
+  font-family: $font-alata;
+  color: #ffff01;
+  background-color: #0000FF;
+
+
+  &:hover {
+    background-color: $beige-color;
+  }
+}
+
+//Variables
+$black: #000;
+$white: #fff;
+$beige-color: #D6CCC2;
+$font-alata: font-alata;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url(images/hero-shot1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding-top: 20px;
+
+    .menu {
+      width: 55%;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        color: $black;
+        font-size: 20px;
+        font-family: $font-alata;
+      }
+    }
+  }
+
+  .header-CTA {
+    font-size: 28px;
+    color: #fff;
+    @include flex(center, center);
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+
+    button {
+      @include button-main();
+      margin-top: 15px;
+    }
+
+  }
+
+}
+
+main {
+  font-family: $font-alata;
+  color: $black;
+
+  .main-top {
+    font-size: 20px;
+    margin: 50px 0;
+    @include flex(center, center);
+    flex-direction: column;
+    align-items: center;
+
+    .decoration-line {
+      width: 100px;
+      height: 3px;
+      border-radius: 5px;
+      background-color: $black;
+      margin-top: 15px;
+    }
+  }
+
+  .main-post {
+    @include flex(center, space-between);
+
+    .main-post-title {
+      @include flex(center, center);
+      flex-direction: column;
+      font-size: 25px;
+      align-items: center;
+      background-color: $beige-color;
+      width: 100%;
+
+      button {
+        @include button-main();
+      }
+
+    }
+  }
+
+}
+

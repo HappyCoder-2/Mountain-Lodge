@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "font-alata";
+  src: url(fonts/Alata-Regular.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url(images/hero-shot1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+  padding-top: 20px;
+}
+header nav .menu {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-family: font-alata;
+}
+header .header-CTA {
+  font-size: 28px;
+  color: #fff;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+}
+header .header-CTA button {
+  padding: 13px, 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-size: large;
+  font-family: font-alata;
+  color: #ffff01;
+  background-color: #0000FF;
+  margin-top: 15px;
+}
+header .header-CTA button:hover {
+  background-color: #D6CCC2;
+}
+
+main {
+  font-family: font-alata;
+  color: #000;
+}
+main .main-top {
+  font-size: 20px;
+  margin: 50px 0;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-top .decoration-line {
+  width: 100px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #000;
+  margin-top: 15px;
+}
+main .main-post {
+  align-content: center;
+  justify-content: space-between;
+  display: flex;
+}
+main .main-post .main-post-title {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  align-items: center;
+  background-color: #D6CCC2;
+  width: 100%;
+}
+main .main-post .main-post-title button {
+  padding: 13px, 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-size: large;
+  font-family: font-alata;
+  color: #ffff01;
+  background-color: #0000FF;
+}
+main .main-post .main-post-title button:hover {
+  background-color: #D6CCC2;
+  color: #0000FF;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
+
+.button-main{
+  padding: 5px 15px;
+  border-radius: 9px;
+  border: none;
+  margin-top: 10px;
+}
+
+.button-main:hover{
+  color: #0000FF;
+  cursor: pointer;
+}
